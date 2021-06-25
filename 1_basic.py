@@ -39,19 +39,26 @@ def display():
     print("Hello world. %s" %string)
 
 def InputFunction():
-    # username=input("input username:")
-    # Id=int(input("input id:"))
-    # print(username)
-    # print(Id)
+    username=input("input username:")
+    Id=int(input("input id:"))
+    point=float(input('input point:'))
+    print(username)
+    print(Id)
+    print(point)
     print()
+    T=type(Id)
+    print(T)
 
         
 def helpfulFunction():
     #dir() บอกข้อมูลภานในโมดูล
     D=dir(main)
+    C=dir(__doc__)
+    print("%s \n" %C)
     print(D)
 
     #help() คำสั่งช่วยเหลือ
+    #quit เพื่อออก
     # H=help()
     # print(H)
 
