@@ -49,6 +49,14 @@ b2 = str(50);
 B3 = b1+b2
 print(B3)
 
-
+#การเลือกแสดง string structure variable[start:end:step]
+#ถ้าติดลบจะนับจากหลังมาเริ่มที่ 1
+print()
+Sring_display="00123456789"
+print(Sring_display[3:7])
+print(Sring_display[-2:-9:-1])
+#****เราไม้่สามารถกำหนดค่าตรงๆให้ string  ได้ ต้องใช้ str.replace(old, new [, count]) 
+Sring_display=Sring_display.replace('0','K',1)
+print(Sring_display[0::])
 
 
