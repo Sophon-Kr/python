@@ -87,6 +87,42 @@ for i in complex_dict_value:
 
     for j in complex_dict_value[i]:
        print(j)  # separate value
+#----------------------------------------------#
 
+################  sets #####################
+# การประกาศ set  ให้ใช้ set() และจะใช้ {}
+set1=set()
+# set1=() มองเป็น tuple
+# set1=[] มองเป็น list
+# set1={} มองเป็น dictionary กำหนดตรงๆแบบนี้ไม่ได้
+# แต่ถ้ากำหนดเลยใช้ได้ เช่น
+set1={'apple','banana','orange'} #set
+dict5={1:'apple',2:'banana',3:'orange'} #dictionary มี key:value
+
+print(type(set1))
+print(type(dict5))
+
+#สามารถเปลี่ยขนยเป็น set ได้โดยการ ใช้ set(variable)
+print(lst1)
+print(type(lst1))
+set_list1=set(lst1)
+print(set_list1)
+print(type(set_list1))
+
+# อย่าลืมว่า set คือจะไม่ซ้ำถ้าซ้ำจะเหลือตัวเดียว
+set2=set('aaaaaaaabbbbbbbbbbbbbcccccccccccccdddddddddddd')
+print(set2)
+
+#การดำเนินการกับ set
+print('Union:',set1|set2)
+set3=set1|set2
+print('Intersection:',set1&set3)
+print('Differnce:',set1-set2)
+print('Differnce:',set2-set1)
+set4={'apple','banana','orange','mango','papaya'} 
+set5={'apple','banana','orange','starfruit','sugar apple'} 
+print('symetric difference:',set5^set4) #ตรงข้าม intersectrion คือส่วนที่ไม่เหมือนกันทั้งหมด
+#ใช้ operation ได้ปกติ <,<=,>,>=,==,!=,in,not in
+#ใช้ for เพื่อเข้าถึงสมาชิก เพราะเราไม่รู้ว่ามีการเรียงอย่างไร
 
 
