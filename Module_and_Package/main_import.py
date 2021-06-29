@@ -14,3 +14,12 @@
 import calculate_area
 
 calculate_area.square(10,5)
+
+from display_paragraphs import print_string
+print_string()
+#ถ้า import function แยกไม่ต้องจุดชื่อ module ก่อน
+#display_paragraphs.print_string  xxx ผิด
+#print_string เรียกใช้ได้เลย
+
+import print_loop as P
+P.P_Loop()
